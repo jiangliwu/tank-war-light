@@ -114,15 +114,10 @@ bool PlayScene::init()
 
 		Mediator::getInstance()->release();   //释放
 		Mediator::getInstance()->init();   //初始化
-
-
-
 		//加载地图
-		map = TmxMap::initMap(mapPath);  //这里
+		map = TmxMap::initMap(mapPath);  // 地图
 		this->addChild(map);
-		
-		
-		//摇杆
+		//添加摇杆，如果宏定义是手机
 #ifdef IAMPHONE__
 		CCSprite * bg = CCSprite::create(control_bg);
 		CCSprite * cen = CCSprite::create(control_ce);
@@ -130,33 +125,22 @@ bool PlayScene::init()
 		control->Active();
 		this->addChild(control,1);
 		control->setOpacity((float)0.3);
-
-		
 		//按钮
 		fire = CCMenuItemImage::create(
 			fire_normal,
 			fire_press
 			);
 		fire->setOpacity(0.3*255);
-
-
-
 		fire->setPosition(ccp(winSize.width - fire->getContentSize().width/2 - 10 , fire->getContentSize().height/2 + 10));
 		CCMenu * menu = CCMenu::create(fire,NULL);
 		menu->setPosition(CCPointZero);
 		CCLayer * menu_layer = CCLayer::create();
 		menu_layer->addChild(menu);
-
-
-		//menu_layer->registerWithTouchDispatcher();
-		//CCTouchDispatcher::sharedDispatcher()->addTargetedDelegate(menu_layer,0,false);
-		//
 		this->addChild(menu_layer);
-#endif // IAMPHONE__
 		this->setTouchEnabled(true);
-		
+#endif // IAMPHONE__
 
-		Tank * tanks = Tank::getATank(tank_player,UP,HERO);   //添加了坦克
+		Tank * tanks = Tank::getATank(tank_player,UP,HERO);   //添加坦克
 		this->addChild(tanks);
 		tanks->getTankSprite()->setPosition(ccp(14.5*map->getTileSize().width ,16));
 
@@ -164,7 +148,7 @@ bool PlayScene::init()
 		Mediator::getInstance()->addJoyStick(control);  //添加摇杆
 		Mediator::getInstance()->addFireButton(fire);    //添加按钮
 #endif
-		
+
 		Mediator::getInstance()->addGameScene(this);    //添加场景
 		Mediator::getInstance()->addHeroTank(tanks);    //添加坦克
 		Mediator::getInstance()->addTileMap(map);     //添加地图

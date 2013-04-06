@@ -19,14 +19,14 @@
 
 Mediator::~Mediator()
 {
-	delete tileMap;
+	/*delete tileMap;
 	delete heroTank;
 	delete gameScene;
 	delete jst;
 	delete fire;
 	bullets->release();
 	tanks->release();
-	enemysBullets->release();
+	enemysBullets->release();*/
 }
 
 void Mediator::addHeroTank(Tank *hero)
