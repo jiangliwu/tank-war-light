@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="source">
+      <UniqueIdentifier>{0515a72e-9c4e-4d3e-a8a5-9854673a9117}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm</Extensions>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{b271ca47-52e6-4805-b516-3ac96d07ac59}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc</Extensions>
+    </Filter>
+    <Filter Include="resource">
+      <UniqueIdentifier>{7bbd344b-d101-43c3-9735-6bedf9deba65}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;jpg;jpeg;jpe;png;manifest</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\TankWar.ico">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\CloseSelected.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\CloseNormal.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\HelloWorld.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\images\about.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\images\about_.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\images\cen.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\images\control_bg.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\images\exit.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\images\exit_.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\images\fire.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\images\fire_pariticl.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\images\fire_press.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\images\load.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\images\load_.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\images\main.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\images\menubg.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\images\options.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\images\options_.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\images\pausebg.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\images\pausemenuresume.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\images\pausemenureturn.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\images\pausemenusave.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\images\snow.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\images\start.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\images\start_.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\images\tank.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\images\tank_.png">
+      <Filter>resource</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="TankWar.rc">
+      <Filter>resource</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Resources\images\main.psd">
+      <Filter>resource</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Classes\AppDelegate.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Bullet.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Common.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Joystick.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Mediator.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\PlayScene.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\StartScene.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Tank.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\TmxMap.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Classes\AppDelegate.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Bullet.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Common.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Joystick.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Mediator.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\PlayScene.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\res.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Singleton.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\StartScene.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Tank.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\TmxMap.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\type.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="main.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>include</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

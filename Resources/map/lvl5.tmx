@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="25" height="15" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="Desert" tilewidth="32" tileheight="32" spacing="1" margin="1">
+  <image source="tmw_desert_spacing.png" width="265" height="199"/>
+  <tile id="9">
+   <properties>
+    <property name="gid" value="1"/>
+   </properties>
+  </tile>
+  <tile id="24">
+   <properties>
+    <property name="gid" value="10"/>
+   </properties>
+  </tile>
+  <tile id="25">
+   <properties>
+    <property name="gid" value="10"/>
+   </properties>
+  </tile>
+ </tileset>
+ <layer name="bg" width="25" height="15">
+  <data encoding="base64" compression="zlib">
+   eJyTY2BgkBvFo3gUj+JRPKwwACRLK/M=
+  </data>
+ </layer>
+ <layer name="content" width="25" height="15">
+  <data encoding="base64" compression="zlib">
+   eJxjYKAv0ABiPTQ+sfrwAS4S+FxoGJd6UszExsdmLzqbVHcTq2aw2kGqueTagS2OiTGXVv7AZwepbsGWdolJi/jEaQHQ8zoyUELCpABJIJbCgqUZsMc3MsCWLrCpV4S6XQ0JKwCxMgEziQEKUKwJxFpYsDYOO+RJtAMU7gCxgAhG
+  </data>
+ </layer>
+ <objectgroup name="enemy" width="25" height="15">
+  <object name="enemy" x="32" y="32"/>
+  <object name="enemy" x="416" y="32"/>
+  <object name="enemy" x="736" y="32"/>
+  <object name="count" x="672" y="-64">
+   <properties>
+    <property name="count" value="8"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>
